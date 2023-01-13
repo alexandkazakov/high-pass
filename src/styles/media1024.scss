@@ -1,0 +1,169 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 714px + (27px * 2);
+    padding: 0 27px;
+  }
+
+  .header {
+    &__nav {
+      display: none;
+    }
+
+    .search-btn {
+      grid-column-start: 6;
+    }
+
+    &__bottom {
+      display: block;
+      width: 100%;
+      background-color: $colorDarkGray1;
+
+      .nav {
+        grid-column: 1 / -1;
+        padding: 12px 0;
+
+        &__list {
+          display: flex;
+          justify-content: space-between;
+
+          @include clearListStyles;
+        }
+
+        &__link {
+          font-family: 'TT Firs Neue';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          color: $colorWhite;
+        }
+      }
+    }
+  }
+
+  .hero {
+    padding-top: 36px;
+    padding-bottom: 67px;
+
+    &__container {
+      grid-template-rows: 1fr 133px;
+    }
+
+    &__block_main {
+      grid-column: 1 / 4;
+      padding: 223px 75px 30px 28px;
+    }
+
+    &__descr {
+      margin-bottom: 16px;
+    }
+
+    &__subtitle {
+      line-height: 90%;
+    }
+
+    &__block_medium {
+      grid-column-start: 4;
+      gap: 15px;
+    }
+
+    &__title {
+      font-size: 22px;
+      margin-top: -2px;
+    }
+
+    &__small-blocks {
+      grid-column-start: 4;
+    }
+  }
+
+  .about {
+    padding-bottom: 62px;
+
+    &__title {
+      grid-column-end: 4;
+    }
+
+    &__descr {
+      grid-column-end: 4;
+    }
+
+    &__right {
+      grid-column-start: 4;
+    }
+  }
+
+  .projects {
+
+    &__container {
+      grid-auto-rows: 307px;
+    }
+
+    &__block_small {
+
+      .projects__descr {
+        max-height: 66px;
+        margin-bottom: 32px;
+      }
+    }
+
+    &__block_big {
+      grid-column-end: span 6;
+
+      .projects__descr {
+        margin-bottom: 0;
+      }
+
+      .projects__btn {
+        bottom: 37px;
+      }
+    }
+  }
+
+  .contacts {
+    padding-top: 61px;
+    padding-bottom: 46px;
+
+    &__container {
+      grid-template-rows: min-content 1fr 1fr;
+      gap: $gridGutter + 1px;
+    }
+
+    &__map {
+      grid-column-end: -1;
+      min-height: 460px;
+    }
+
+    &__map-descr {
+      grid-column-end: -1;
+      padding-bottom: 25px;
+    }
+
+    .feedback {
+      grid-column: 1 / 5;
+      grid-row: 3 / -1;
+    }
+
+    &__address {
+      max-width: 436px;
+    }
+
+    &__tel-wrap {
+      position: static;
+    }
+  }
+
+  .footer {
+    &__descr {
+      display: none;
+    }
+
+    &__social-icons {
+      padding-left: 0;
+    }
+  }
+}

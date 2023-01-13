@@ -1,0 +1,92 @@
+@import '_variables.scss';
+@import '_fonts.scss';
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: $colorWhite;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-rows: min-content;
+  gap: $gridGutter;
+  min-width: 320px;
+  max-width: $containerMaxWidth + ($containerPadding * 2);
+  min-height: 100%;
+  padding: 0 $containerPadding;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  max-width: max-content;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.section-title {
+  padding: 0;
+  margin: 0;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.btn {
+  padding: 15.5px 22px;
+  background-color: $colorAccent;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $colorWhite;
+  border-radius: 0;
+}
+
+.hashtag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 15px;
+  background-color: $colorBlack;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $colorWhite;
+}

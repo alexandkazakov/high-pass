@@ -1,0 +1,66 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+@import'_fonts.scss';
+
+.header {
+  &__top {
+    width: 100%;
+    padding: 23px 0 22px;
+    background-color: $colorBlack;
+  }
+
+  &__bottom {
+    width: 100%;
+    display: none;
+  }
+
+  &__container {
+    align-items: center;
+  }
+
+  &__logo {
+    grid-column: 1 / span 2;
+  }
+
+  &__nav {
+    grid-column: 4 / 11;
+  }
+
+  &__search {
+    display: none;
+  }
+
+  .search-btn {
+    @include clearBtnStyles;
+    grid-column-start: 12;
+    justify-self: end;
+  }
+
+  .search-icon {
+    fill: $colorWhite;
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      @include clearListStyles;
+    }
+
+    &__link {
+      font-family: 'TT Firs Neue';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: $colorWhite;
+    }
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}
+
+
