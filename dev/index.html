@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>High pass</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
@@ -15,6 +14,8 @@
   <link rel="prefetch" href="./fonts/TTFirsNeue-Medium.woff2" as="font">
   <link rel="prefetch" href="./fonts/TTFirsNeue-Medium.woff" as="font">
   <link rel="stylesheet" href="./styles/main.min.css">
+  <link rel="shortcut icon" href="./img/svg/favicon.svg" type="image/svg+xml">
+  <title>High pass</title>
 </head>
 <body class="body">
   <header class="header">
@@ -88,10 +89,10 @@
       <div class="container hero__container">
         <div class="hero__block hero__block_main">
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/hero__block_main-278w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/hero__block_main-342w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/hero__block_main-466w.webp">
-            <img src="./img/hero__block_main.webp" alt="Фотография фотоаппарата" class="hero__block_main-photo">
+            <source media="(max-width: 768px)" srcset="./img/hero__block_main-278w.webp, ./img/hero__block_main-278w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/hero__block_main-342w.webp, ./img/hero__block_main-342w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/hero__block_main-466w.webp, ./img/hero__block_main-466w-2x.webp 2x">
+            <img src="./img/hero__block_main.webp" srcset="./img/hero__block_main-2x.webp 2x" alt="Фотография фотоаппарата" class="hero__block_main-photo">
           </picture>
           <span class="hashtag">#мастеркласс</span>
           <p class="hero__descr">
@@ -105,24 +106,24 @@
             Работы участников предыдущего мастер-класса
           </h2>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/hero__block_medium-278w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/hero__block_medium-342w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/hero__block_medium-466w.webp">
-            <img src="./img/hero__block_medium.webp" alt="Фотография девушки" class="hero__block_medium-photo">
+            <source media="(max-width: 768px)" srcset="./img/hero__block_medium-278w.webp, ./img/hero__block_medium-278w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/hero__block_medium-342w.webp, ./img/hero__block_medium-342w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/hero__block_medium-466w.webp, ./img/hero__block_medium-466w-2x.webp 2x">
+            <img src="./img/hero__block_medium.webp" srcset="./img/hero__block_medium-2x.webp 2x" alt="Фотография девушки" class="hero__block_medium-photo">
           </picture>
         </div>
         <div class="hero__small-blocks">
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/hero__block_small-left-124w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/hero__block_small-left-156w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/hero__block_small-left-186w.webp">
-            <img src="./img/hero__block_small-left.webp" alt="Фотография девушки" class="hero__block_small-photo">
+            <source media="(max-width: 768px)" srcset="./img/hero__block_small-left-124w.webp, ./img/hero__block_small-left-124w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/hero__block_small-left-156w.webp, ./img/hero__block_small-left-156w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/hero__block_small-left-186w.webp, ./img/hero__block_small-left-186w-2x.webp 2x">
+            <img src="./img/hero__block_small-left.webp" srcset="./img/hero__block_small-left-2x.webp 2x" alt="Фотография девушки" class="hero__block_small-photo">
           </picture>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/hero__block_small-right-124w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/hero__block_small-right-156w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/hero__block_small-right-186w.webp">
-            <img src="./img/hero__block_small-right.webp" alt="Фотография девушки" class="hero__block_small-photo">
+            <source media="(max-width: 768px)" srcset="./img/hero__block_small-right-124w.webp, ./img/hero__block_small-right-124w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/hero__block_small-right-156w.webp, ./img/hero__block_small-right-156w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/hero__block_small-right-186w.webp, ./img/hero__block_small-right-186w-2x.webp 2x">
+            <img src="./img/hero__block_small-right.webp" srcset="./img/hero__block_small-right-2x.webp 2x" alt="Фотография девушки" class="hero__block_small-photo">
           </picture>
         </div>
       </div>
@@ -135,14 +136,14 @@
         </p>
         <div class="about__right">
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/about-278w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/about-342w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/about-466w.webp">
-            <img src="./img/about-630w.webp" alt="Фотография фотоаппарата" class="about__image">
+            <source media="(max-width: 768px)" srcset="./img/about-278w.webp, ./img/about-278w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/about-342w.webp, ./img/about-342w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/about-466w.webp, ./img/about-466w-2x.webp 2x">
+            <img src="./img/about-630w.webp" srcset="./img/about-2x.webp 2x" alt="Фотография фотоаппарата" class="about__image">
           </picture>
-          <form action="" class="about__form">
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="about__form">
             <label class="about__label">Подписаться на рассылку</label>
-            <input class="about__input" type="email" name="" id="" placeholder="Email">
+            <input class="about__input" type="email" name="email" placeholder="Email" required>
             <button class="btn" type="submit">Отправить</button>
           </form>
 
@@ -155,9 +156,9 @@
         <div class="projects__block-1 projects__block_small">
           <span class="hashtag projects__hashtag">#пейзаж</span>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/projects__block_small-1-278w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/projects__block_small-1-218w.webp">
-            <img class="projects__block_photo" src="./img/projects__block_small-1.webp" alt="Фото гор">
+            <source media="(max-width: 768px)" srcset="./img/projects__block_small-1-278w.webp, ./img/projects__block_small-1-278w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/projects__block_small-1-218w.webp, ./img/projects__block_small-1-218w-2x.webp 2x">
+            <img class="projects__block_photo" src="./img/projects__block_small-1.webp" srcset="./img/projects__block_small-1-2x.webp 2x" alt="Фото гор">
           </picture>
           <p class="projects__descr">
             Синтетически, смешаны с не уникальными данными до степени… данными до степени…
@@ -172,9 +173,9 @@
         <div class="projects__block-2 projects__block_small">
           <span class="hashtag projects__hashtag">#портрет</span>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/projects__block_small-2-278w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/projects__block_small-2-218w.webp">
-            <img class="projects__block_photo" src="./img/projects__block_small-2.webp" alt="Фотография портрет человека в профиль">
+            <source media="(max-width: 768px)" srcset="./img/projects__block_small-2-278w.webp, ./img/projects__block_small-2-278w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/projects__block_small-2-218w.webp, ./img/projects__block_small-2-218w-2x.webp 2x">
+            <img class="projects__block_photo" src="./img/projects__block_small-2.webp" srcset="./img/projects__block_small-2-2x.webp 2x" alt="Фотография портрет человека в профиль">
           </picture>
           <p class="projects__descr">
             В своём стремлении улучшить опыт мы упускаем, что явные...
@@ -189,10 +190,10 @@
         <div class="projects__block-3 projects__block_small">
           <span class="hashtag projects__hashtag">#предмет</span>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/projects__block_small-3-278w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/projects__block_small-3-218w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/projects__block-3-466w.webp">
-            <img class="projects__block_photo" src="./img/projects__block_small-3.webp" alt="Фото предметов на столе">
+            <source media="(max-width: 768px)" srcset="./img/projects__block_small-3-278w.webp, ./img/projects__block_small-3-278w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/projects__block_small-3-218w.webp, ./img/projects__block_small-3-218w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/projects__block-3-466w.webp, ./img/projects__block-3-466w-2x.webp 2x">
+            <img class="projects__block_photo" src="./img/projects__block_small-3.webp" srcset="./img/projects__block_small-3-2x.webp 2x" alt="Фото предметов на столе">
           </picture>
           <p class="projects__descr">
             Равным образом, высокое качество позиционных высокотехнологичная концепция общественного уклада
@@ -207,10 +208,10 @@
         <div class="projects__block-4 projects__block_big">
           <span class="hashtag projects__hashtag">#fuji</span>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/projects__block_big-1-278w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/projects__block_big-1-714w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/projects__block_big-1-590w.webp">
-            <img class="projects__block_photo" src="./img/projects__block_big-1.webp" alt="Фотография лицо девушки">
+            <source media="(max-width: 768px)" srcset="./img/projects__block_big-1-278w.webp, ./img/projects__block_big-1-278w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/projects__block_big-1-714w.webp, ./img/projects__block_big-1-714w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/projects__block_big-1-590w.webp, ./img/projects__block_big-1-590w-2x.webp 2x">
+            <img class="projects__block_photo" src="./img/projects__block_big-1.webp" srcset="./img/projects__block_big-1-2x.webp 2x" alt="Фотография лицо девушки">
           </picture>
           <div class="projects__date">
             <svg class="projects__date-img" width="14" height="14">
@@ -227,10 +228,10 @@
         <div class="projects__block-5 projects__block_big">
           <span class="hashtag projects__hashtag">#проектзабвение</span>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/projects__block_big-2-278w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/projects__block_big-2-714w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/projects__block_big-2-590w.webp">
-            <img class="projects__block_photo" src="./img/projects__block_big-2.webp" alt="Фотография человека, идущего по скале">
+            <source media="(max-width: 768px)" srcset="./img/projects__block_big-2-278w.webp, ./img/projects__block_big-2-278w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/projects__block_big-2-714w.webp, ./img/projects__block_big-2-714w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/projects__block_big-2-590w.webp, ./img/projects__block_big-2-590w-2x.webp 2x">
+            <img class="projects__block_photo" src="./img/projects__block_big-2.webp" srcset="./img/projects__block_big-2-2x.webp 2x" alt="Фотография человека, идущего по скале">
           </picture>
           <div class="projects__date">
             <svg class="projects__date-img" width="14" height="14">
@@ -247,9 +248,9 @@
         <div class="projects__block-6 projects__block_medium">
           <span class="hashtag projects__hashtag">#ретушь</span>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/projects__block_medium-1-278w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/projects__block_medium-1-342w.webp">
-            <img class="projects__block_photo" src="./img/projects__block_medium-1.webp" alt="Фотография апельсинов на столе">
+            <source media="(max-width: 768px)" srcset="./img/projects__block_medium-1-278w.webp, ./img/projects__block_medium-1-278w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/projects__block_medium-1-342w.webp, ./img/projects__block_medium-1-342w-2x.webp 2x">
+            <img class="projects__block_photo" src="./img/projects__block_medium-1.webp" srcset="./img/projects__block_medium-1-2x.webp 2x" alt="Фотография апельсинов на столе">
           </picture>
           <p class="projects__descr">
             Как принято считать, многие известные личности и по сей день остаются уделом либералов…
@@ -264,9 +265,9 @@
         <div class="projects__block-7 projects__block_medium">
           <span class="hashtag projects__hashtag">#портрет</span>
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/projects__block_medium-2-278w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/projects__block_medium-2-342w.webp">
-            <img class="projects__block_photo" src="./img/projects__block_medium-2.webp" alt="Фото девушки">
+            <source media="(max-width: 768px)" srcset="./img/projects__block_medium-2-278w.webp, ./img/projects__block_medium-2-278w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/projects__block_medium-2-342w.webp, ./img/projects__block_medium-2-342w-2x.webp 2x">
+            <img class="projects__block_photo" src="./img/projects__block_medium-2.webp" srcset="./img/projects__block_medium-2-2x.webp 2x" alt="Фото девушки">
           </picture>
           <p class="projects__descr">
             С учётом сложившейся международной обстановки, новая модель организационной…
@@ -285,10 +286,10 @@
         <h2 class="section-title contacts__title">Контакты</h2>
         <div class="contacts__map">
           <picture>
-            <source media="(max-width: 768px)" srcset="./img/contacts__map-320w.webp">
-            <source media="(max-width: 1024px)" srcset="./img/contacts__map-714w.webp">
-            <source media="(max-width: 1320px)" srcset="./img/contacts__map-590w.webp">
-            <img class="contacts__map-img" src="./img/contacts__map.webp" alt="Карта с расположением офиса">
+            <source media="(max-width: 768px)" srcset="./img/contacts__map-320w.webp, ./img/contacts__map-320w-2x.webp 2x">
+            <source media="(max-width: 1024px)" srcset="./img/contacts__map-714w.webp, ./img/contacts__map-714w-2x.webp 2x">
+            <source media="(max-width: 1320px)" srcset="./img/contacts__map-590w.webp, ./img/contacts__map-590w-2x.webp 2x">
+            <img class="contacts__map-img" src="./img/contacts__map.webp" srcset="./img/contacts__map-2x.webp 2x" alt="Карта с расположением офиса">
           </picture>
           <button class="contacts__map-marker"></button>
         </div>
@@ -315,10 +316,10 @@
           <p class="feedback__descr">
             Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки или другого мероприятия
           </p>
-          <form action="" class="feedback__form">
-            <input type="text" class="feedback__input" placeholder="Имя">
-            <input type="email" name="" id="" class="feedback__input" placeholder="Email">
-            <textarea name="" id="" class="feedback__textarea" placeholder="Комментарий"></textarea>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="feedback__form">
+            <input type="text" name="name" class="feedback__input" placeholder="Имя" required>
+            <input type="email" name="email" class="feedback__input" placeholder="Email" required>
+            <textarea name="comment" class="feedback__textarea" placeholder="Комментарий"></textarea>
             <button type="submit" class="btn feedback__btn">Отправить</button>
           </form>
         </div>
