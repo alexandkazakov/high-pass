@@ -3,11 +3,18 @@
 @import'_fonts.scss';
 
 .footer {
-  padding: 15px 0;
-  background-color: $colorBlack;
+
+  &__top {
+    padding: 15px 0;
+    background-color: $colorBlack;
+  }
 
   &__container {
     align-items: center;
+  }
+
+  &__bottom {
+    display: none;
   }
 
   &__logo{

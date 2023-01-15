@@ -258,7 +258,7 @@
 
   .contacts {
     padding-top: 51px;
-    padding-bottom: 16px;
+    padding-bottom: 18px;
 
     &__title {
       margin-bottom: 0;
@@ -272,8 +272,15 @@
     }
 
     &__map {
+      width: 320px;
+      margin-left: -21px;
+      margin-top: -18px;
+      min-height: 472px;
+
       &-descr {
-        padding: 26px 19px 2px;
+        width: 320px;
+        margin-left: -21px;
+        padding: 26px 19px 13px;
       }
     }
 
@@ -305,6 +312,7 @@
 
     .feedback {
       grid-column-end: -1;
+      width: 278px;
 
       &__descr {
         font-size: 14px;
@@ -316,6 +324,7 @@
       }
 
       &__input {
+        width: 100%;
         padding: 12px 23px;
         font-size: 14px;
         line-height: 16px;
@@ -330,6 +339,27 @@
   }
 
   .footer {
+
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 14px;
+      background-color: $colorDarkGray1;
+
+      .footer__logo-img {
+        width: 112px;
+        height: 18px;
+        margin-top: 0;
+      }
+
+      .footer__copy {
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
 
     &__container {
       padding: 15px 0;
