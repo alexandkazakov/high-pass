@@ -40,6 +40,26 @@
     fill: $colorWhite;
   }
 
+  .search-icon {
+    transition: fill .2s ease-in-out;
+  }
+
+  .search-btn:focus .search-icon {
+    fill: $colorDarkAccent;
+  }
+
+  .search-btn:focus {
+    outline: none;
+  }
+
+  .search-btn:hover .search-icon {
+    fill: $colorAccent;
+  }
+
+  .search-btn:active .search-icon {
+    fill: $colorDeepAccent;
+  }
+
   .nav {
     &__list {
       display: flex;
@@ -55,6 +75,21 @@
       font-size: 16px;
       line-height: 21px;
       color: $colorWhite;
+      transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    }
+
+    &__link:focus {
+      outline: none;
+      background-color: $colorDarkAccent;
+    }
+
+    &__link:hover {
+      color: $colorAccent;
+    }
+
+    &__link:active {
+      background-color: transparent;
+      color: $colorDeepAccent;
     }
   }
 

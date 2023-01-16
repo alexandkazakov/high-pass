@@ -76,10 +76,27 @@
 
     &-icon {
       fill: $colorLightGray2;
+      transition: fill .2s ease-in-out;
     }
 
-    &-icon:not(:last-child) {
+    &-icon:hover {
+      fill: $colorAccent;
+    }
+
+    &-link:not(:last-child) {
       margin-right: 18px;
+    }
+
+    &-link:focus {
+      outline: none;
+    }
+
+    &-link:focus &-icon {
+      fill: $colorDarkAccent;
+    }
+
+    &-link:active &-icon {
+      fill: $colorDeepAccent;
     }
   }
 }
