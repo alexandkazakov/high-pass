@@ -10,7 +10,7 @@ const browserSync = require('browser-sync');
 module.exports = function scripts() {
   return src([
       './src/js/components/**/*.js',
-      './src/js/main.js',
+      './src/js/script.js',
     ], {"allowEmpty": true})
     .pipe(map.init())
     .pipe(babel({

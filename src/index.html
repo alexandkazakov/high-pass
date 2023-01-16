@@ -51,7 +51,18 @@
           </svg>
         </button>
         <div class="header__search">
-          search
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="search">
+            <input class="search__input" type="search" name="search" id="search" placeholder="Что будем искать?">
+            <button class="search__btn search-btn" type="submit">
+              <svg class="search-icon" width="16" height="16">
+                <use xlink:href="./img/spriteUncolor.svg#search-icon"></use>
+              </svg>
+            </button>
+          </form>
+          <button class="search__btn-close" type="reset">
+            <span class="search__btn-line"></span>
+            <span class="search__btn-line"></span>
+          </button>
         </div>
       </div>
     </div>
@@ -83,6 +94,35 @@
         </button>
       </div>
     </div>
+    <nav class="nav header__burger">
+      <button class="nav__btn-close" type="reset">
+        <span class="nav__btn-line"></span>
+        <span class="nav__btn-line"></span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#about" class="nav__link">О студии</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link">Наши проекты</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Услуги</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Мастер-классы</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+      <div class="contacts__tel-wrap">
+        <svg class="contacts__tel-icon" width="18" height="18">
+          <use xlink:href="./img/sprite.svg#contacts-tel"></use>
+        </svg>
+        <a href="tel:+749542423532" class="contacts__tel">+7 495 424-23-532</a>
+      </div>
+    </nav>
   </header>
   <main class="main">
     <section class="hero">
@@ -304,7 +344,7 @@
           </picture>
           <button class="contacts__map-marker"></button>
         </div>
-        <div class="contacts__map-descr">
+        <div class="contacts__map-descr contacts__map-descr_open">
           <button class="contacts__btn-close">
             <span class="contacts__btn-line"></span>
             <span class="contacts__btn-line"></span>

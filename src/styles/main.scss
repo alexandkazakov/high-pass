@@ -388,6 +388,14 @@
     grid-row: 2 / span 1;
     padding: 175px 50px 150px 60px;
     background-color: $colorDarkGray2;
+    opacity: 0;
+    visibility: 0;
+    transition: opacity .2s ease-in-out;
+  }
+
+  &__map-descr_open {
+    opacity: 1;
+    visibility: visible;
   }
 
   &__btn-close {

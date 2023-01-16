@@ -20,6 +20,7 @@
   }
 
   .header {
+    position: relative;
 
     &__top {
       padding: 25px 0 21px 0;
@@ -28,6 +29,18 @@
     &__logo-img {
       width: 112px;
       height: 18px;
+    }
+
+    &__search {
+      padding: 0;
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .search {
+      &__input {
+        width: 100%;
+      }
     }
 
     .search-icon {
@@ -75,6 +88,93 @@
           bottom: 0;
           width: 50%;
         }
+      }
+    }
+
+    &__burger_open {
+      padding: 14px 21px 36px 21px;
+      visibility: visible;
+      z-index: 1000;
+      background-color: $colorBlack;
+      transform: translateX(0);
+      transition: transform .3s ease-in-out;
+
+      .contacts__tel-wrap {
+        position: absolute;
+        bottom: 36px;
+        left: 21px
+      }
+
+      .nav__list {
+        flex-direction: column;
+      }
+
+      .nav__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      .nav__btn-close {
+        @include clearBtnStyles;
+
+        position: relative;
+        width: 23px;
+        height: 23px;
+        margin-bottom: 16px;
+        border-radius: 50%;
+        background-color: $colorGray;
+        transition: background-color .2s ease-in-out, outline-offset .1s ease-in-out;
+      }
+
+      .nav__btn-close:focus {
+        outline: 1px solid $colorAccent;
+        outline-offset: 2px;
+      }
+
+      .nav__btn-close:hover {
+        background-color: $colorLightGray2;
+      }
+
+      .nav__btn-close:hover .nav__btn-line {
+        background-color: $colorBlack;
+      }
+
+      .nav__btn-close:active {
+        background-color: $colorLightGray1;
+        outline: none;
+      }
+
+      .nav__btn-close:active .nav__btn-line {
+        background-color: $colorBlack;
+      }
+
+
+      .nav__btn-line {
+        display: block;
+        width: 12px;
+        height: 1px;
+        background-color: $colorWhite;
+        transition: background-color .2s ease-in-out;
+      }
+
+      .nav__btn-line:nth-child(1) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:
+          translateX(-50%)
+          translateY(-50%)
+          rotate(45deg);
+      }
+
+      .nav__btn-line:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:
+          translateX(-50%)
+          translateY(-50%)
+          rotate(-45deg);
       }
     }
   }

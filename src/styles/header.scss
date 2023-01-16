@@ -15,6 +15,7 @@
   }
 
   &__container {
+    position: relative;
     align-items: center;
   }
 
@@ -27,7 +28,22 @@
   }
 
   &__search {
-    display: none;
+    position: absolute;
+    padding: 0px 30px;
+    background-color: $colorBlack;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+  }
+
+  &__search_active {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    visibility: visible;
+    opacity: 1;
   }
 
   .search-btn {
@@ -58,6 +74,97 @@
 
   .search-btn:active .search-icon {
     fill: $colorDeepAccent;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    &__input {
+      width: 169px;
+      padding: 5px;
+      margin-right: 10px;
+      background-color: transparent;
+      color: $colorWhite;
+      border: none;
+      border-bottom: 1px solid $colorLightGray1;
+      font-family: 'TT Firs Neue';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &__input::placeholder {
+      color: $colorLightGray1;
+    }
+
+    &__input:focus {
+      outline: none;
+    }
+
+    &__btn-close {
+      @include clearBtnStyles;
+
+      position: relative;
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      background-color: $colorGray;
+      transition: background-color .2s ease-in-out, outline-offset .1s ease-in-out;
+    }
+
+    &__btn-close:focus {
+      outline: 1px solid $colorAccent;
+      outline-offset: 2px;
+    }
+
+    &__btn-close:hover {
+      background-color: $colorLightGray2;
+    }
+
+    &__btn-close:hover &__btn-line {
+      background-color: $colorBlack;
+    }
+
+    &__btn-close:active {
+      background-color: $colorLightGray1;
+      outline: none;
+    }
+
+    &__btn-close:active &__btn-line {
+      background-color: $colorBlack;
+    }
+
+
+    &__btn-line {
+      display: block;
+      width: 12px;
+      height: 1px;
+      background-color: $colorWhite;
+      transition: background-color .2s ease-in-out;
+    }
+
+    &__btn-line:nth-child(1) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform:
+        translateX(-50%)
+        translateY(-50%)
+        rotate(45deg);
+    }
+
+    &__btn-line:nth-child(2) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform:
+        translateX(-50%)
+        translateY(-50%)
+        rotate(-45deg);
+    }
   }
 
   .nav {
@@ -95,6 +202,17 @@
 
   .nav-btn {
     display: none;
+  }
+
+  &__burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: transform .3s ease-in-out;
   }
 }
 
